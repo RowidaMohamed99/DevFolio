@@ -1,0 +1,26 @@
+/* header */
+@media (min-width: 1200px) {
+    .container h1{
+        font-size: 4.5rem;
+
+    }
+}
+/* counter */
+@media (max-width: 574px) {
+    .counter{
+        height: 1000px ;
+
+    }
+}
+/* contact */
+@media (max-width: 768px) {
+    .contact{
+        height: 1000px ;
+    }
+}
+@media (max-width: 640px) {
+    .contact{
+        height: 1300px ;
+    }
+}
+
