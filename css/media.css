@@ -9,7 +9,6 @@
 @media (max-width: 574px) {
     .counter{
         height: 1000px ;
-
     }
     .container-form {
         padding: 1rem;
@@ -33,7 +32,7 @@
 }
 @media (max-width: 640px) {
     .contact{
-        height: 1300px ;
+        height: auto ;
     }
 }
 
