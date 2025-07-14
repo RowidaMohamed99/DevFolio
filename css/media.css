@@ -22,17 +22,151 @@
         justify-content: center;
     }
 }
-/* contact */
-@media (max-width: 768px) {
-    .contact{
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        height: auto;
+/* Services */
+@media (max-width: 991px) {
+    #services .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #services .col-md-4 {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 1.5rem;
+    }
+
+    #services .card {
+    width: 100%;
     }
 }
+
+/* Blog */
+@media (max-width: 991px) {
+    .title h2 {
+    font-size: 2rem;
+    }
+
+    .title p {
+    font-size: 1rem;
+    }
+    .blog .row.d-flex.justify-content-around.p-5 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .blog .col-md-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    }
+    .blog .card {
+    width: 90%; 
+  }
+}
+
+@media (max-width: 575px) {
+    .title h2 {
+    font-size: 1.5rem;
+    }
+
+    .title p {
+    font-size: 0.9rem;
+    }
+
+    .card-body a {
+    font-size: 1rem;
+    }
+
+    .card-text {
+    font-size: 0.9rem;
+    }
+    .card-footer img {
+    width: 35px;
+    height: 35px;
+    } 
+
+    .card-footer {
+    height: auto;
+    flex-direction: column;
+    gap: 5px;
+    }
+}
+/* contact */
 @media (max-width: 640px) {
     .contact{
         height: auto ;
     }
 }
+
+@media (max-width: 992px) {
+  .form-title, .get {
+    text-align: center;
+  }
+
+  .submit-button {
+    justify-content: center !important;
+  }
+
+  .facebook {
+    margin: 5px;
+  }
+
+  .form-control {
+    font-size: 1rem;
+  }
+
+  .send-me::before,
+  .get::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    height: auto;
+    padding: 40px 10px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: auto;
+  }
+
+  .form-control,
+  textarea {
+    width: 100% !important;
+  }
+
+  .social {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .facebook {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-form {
+    padding: 15px !important;
+  }
+
+  .form-title h4,
+  .get h4 {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+  }
+
+  .copywight {
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
+
 

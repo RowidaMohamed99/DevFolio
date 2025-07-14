@@ -38,7 +38,7 @@ html, body {
     width: 50px;
 }
 /* header */
-.header{
+.header {
     background-image: url(../imge/hero-bg.jpg);
     background-position: center;
     background-size:cover;
@@ -46,7 +46,7 @@ html, body {
     position: relative;
     background-attachment: fixed;
 }
-.layout{
+.header .layout{
     background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
     width: 100%;
@@ -64,6 +64,7 @@ html, body {
 }
 .freelancer{
     animation: freelancer 5s infinite steps(10);
+    -webkit-animation: freelancer 5s infinite steps(10);
 }
 .photographer{
     animation: photographer 5s infinite steps(12);
@@ -109,21 +110,25 @@ html, body {
     bottom: 0px;
 }
 /* service */
-.under{
+.service .under{
     width: 50px;
     height: 5px;
     background-color: #0078ff;
     margin: 0 auto;
 }
-.circle{
+.service .circle{
     height: 120px;
     width: 120px;
     background-color: white;
     border: 10px #0078ff solid;
     border-radius: 50%;
     transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    -ms-transition: all 400ms;
+    -o-transition: all 400ms;
 }
-.circle:hover{
+.service .circle:hover{
     color: white;
     background-color: #0078ff;
     border-color: #a2caf8; 
@@ -168,11 +173,15 @@ html, body {
     left: 3px;
     bottom: -6px;
 }
-.card{
+.work .card{
     width: 22rem;
 }
 .card-img-top{
     transition: scale 500ms linear;
+    -webkit-transition: scale 500ms linear;
+    -moz-transition: scale 500ms linear;
+    -ms-transition: scale 500ms linear;
+    -o-transition: scale 500ms linear;
 }
 .card-img-top:hover{
     content: "";
@@ -204,39 +213,96 @@ html, body {
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
+/* blog */
+.container-blog {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.blog .title h2 {
+    font-size: 2.5rem;
+}
+.blog .title p {
+    font-size: 1.1rem;
+}
+.blog .card {
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 
-.card-footer{
+.blog .card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    
+}
+.blog .card-body a {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.blog .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+.blog .card-footer {
+    height: 60px;
+    align-items: center;
+}
+
+.blog .card-footer img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.blog .card-footer{
     height: 50px;
 }
-.card-categry-box{
+.blog .card-categry-box{
     right: 0px;
     left: 0px;
     bottom: -10px;
     height: 30px;
     
 }
-.card-categry{
+.blog .card-categry-box {
+    right: 0;
+    left: 0;
+    bottom: -10px;
+    height: 30px;
+}
+.blog .card-categry{
     background-color: #0078ff;
-    padding: 10px;
     width: fit-content;
     margin: 0 auto; 
+    background-color: #0078ff;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    border-radius: 4px;
 }
-h6{
+.blog h6{
     font-size: small; 
 }
 /* contact */
-.contact{
+.contact {
     background-image: url(../imge/overlay-bg.jpg);
     height: 130vh;
     background-position: center center;
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    padding: 110px;
+    padding: 60px 15px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.overlay-last{
+.contact .overlay-last{
     background-color: #0078ff;
     position: absolute;
     width: 100%;
@@ -246,7 +312,7 @@ h6{
     left: 0px;
     opacity: 0.7;
 }
-.send-me::before{
+.contact .send-me::before{
     content: "";
     position: absolute;
     height: 3px;
