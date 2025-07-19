@@ -173,15 +173,21 @@ html, body {
     left: 3px;
     bottom: -6px;
 }
+.work .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
 .work .card{
-    width: 22rem;
+    /* width: 22rem; */
+    width: 100%;
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+    
 }
 .card-img-top{
     transition: scale 500ms linear;
-    -webkit-transition: scale 500ms linear;
-    -moz-transition: scale 500ms linear;
-    -ms-transition: scale 500ms linear;
-    -o-transition: scale 500ms linear;
 }
 .card-img-top:hover{
     content: "";

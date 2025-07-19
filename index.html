@@ -15,41 +15,42 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg  p-4 pb-0">
+    <nav class="navbar navbar-expand-lg   p-4 pb-0">
         <div class="container-fluid fw-bold fixed-top bg-black px-5 py-2">
           <a class="navbar-brand fs-3" href="#">DevFolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white " ></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item align-content-center">
-                <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+              <li class="nav-item align-content-center" >
+                <a class="nav-link active" aria-current="page" href="#home" onclick="this.closest('.navbar-collapse').classList.remove('show')">HOME</a>
+              </li>
+              <li class="nav-item align-content-center" >
+                <a class="nav-link" href="#about" onclick="this.closest('.navbar-collapse').classList.remove('show')">ABOUT</a>
               </li>
               <li class="nav-item align-content-center">
-                <a class="nav-link" href="#about">ABOUT</a>
+                <a class="nav-link" href="#services" onclick="this.closest('.navbar-collapse').classList.remove('show')">SERVICES</a>
               </li>
               <li class="nav-item align-content-center">
-                <a class="nav-link" href="#services">SERVICES</a>
+                <a class="nav-link" href="#work" onclick="this.closest('.navbar-collapse').classList.remove('show')">WORK</a>
               </li>
               <li class="nav-item align-content-center">
-                <a class="nav-link" href="#work">WORK</a>
-              </li>
-              <li class="nav-item align-content-center">
-                <a class="nav-link" href="#blog">BLOG</a>
+                <a class="nav-link" href="#blog" onclick="this.closest('.navbar-collapse').classList.remove('show')">BLOG</a>
               </li>
               <li class="nav-item dropdown align-content-center">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     DROP DOWN
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
-                  <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
-                  <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="this.closest('.navbar-collapse').classList.remove('show')">Drop Down 1</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="this.closest('.navbar-collapse').classList.remove('show')">Drop Down 2</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="this.closest('.navbar-collapse').classList.remove('show')">Drop Down 3</a></li>
                 </ul>
               </li>
               <li class="nav-item align-content-center">
-                <a class="nav-link" href="#contact">CONTACT</a>
+                <a class="nav-link" href="#contact" onclick="this.closest('.navbar-collapse').classList.remove('show')">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -289,7 +290,7 @@
       </div>
       </div>
       <!-- work -->
-       <div class="work pt-5 bg-white vh-150" id="work">
+       <div class="work container p-5 bg-white vh-150" id="work">
         <div class="container">
           <div class="title pt-5 text-center">
             <h2 class="h1 fw-bold">PORTOPHOLIO</h2>
@@ -623,7 +624,7 @@
        <div class="copywight pb-0">
         <div class="con ">
           <p class="text-white text-center pt-4">© Copyright <span class="fw-bold">DevFolio</span>. All Rights Reserved</p>
-          <p class="text-white text-center"> Designed by BootstrapMade</p>
+          <p class="text-white text-center mb-0"> Designed by BootstrapMade</p>
         </div>
        </div>
 
